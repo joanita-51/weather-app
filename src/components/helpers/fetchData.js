@@ -1,10 +1,10 @@
 import axios from 'axios'
 console.log(process.env.REACT_APP_WEATHER_API_KEY)
 const apiKey = process.env.REACT_APP_WEATHER_API_KEY
-const apiBase = REACT_APP_WEATHER_API_BASE
+const apiBase = process.env.REACT_APP_WEATHER_API_BASE
 
 const getData = async (location = 'Kampala')=>{
-    const API_URL = `?${apiBase}?key=${apiKey}&q=${location}`
+    const API_URL = `${apiBase}?key=${apiKey}&q=${location}`
     let response = ''
 
     try {
