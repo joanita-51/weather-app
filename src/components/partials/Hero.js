@@ -1,6 +1,6 @@
 import React from 'react'
 import getData from '../helpers/fetchData'
-import '../../styles/posts.css'
+import '../../styles/styles.css'
 
 const Hero = () => {
     const [stateLocation, setStateLocation]= React.useState('')
